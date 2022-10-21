@@ -1,0 +1,3 @@
+docs/latex*
+docs/doctrees*
+!docs/latex/sphinx.pdf
