@@ -397,6 +397,9 @@ NT-100 異音チェッカー 取扱説明書
 
 本ユニットは、下図のような画面にて構成されています。
 
+.. contents:: 
+   :local:
+
 メイン（計測）画面
 ~~~~~~~~~~~~~~~~~~
 
@@ -1116,42 +1119,17 @@ NT-100 異音チェッカー 取扱説明書
 性能・品質の向上等に伴い、お断り無く掲載事項を変更させて頂く場合があります。予めご了承下さい。
 
 .. |image1| image:: media/image6.png
-   :width: 6.2342in
-   :height: 2.48368in
 .. |image2| image:: media/image7.png
-   :width: 2.85798in
-   :height: 2.25031in
 .. |image3| image:: media/image17.png
-   :width: 6.30296in
-   :height: 1.93777in
 .. |image4| image:: media/image18.png
-   :width: 6.30296in
-   :height: 1.93777in
 .. |image5| image:: media/image19.gif
-   :width: 5.89722in
-   :height: 3.07847in
 .. |image6| image:: media/image20.gif
-   :width: 5.89722in
-   :height: 3.07847in
 .. |image7| image:: media/image23.gif
-   :width: 2.66654in
-   :height: 2in
 .. |image8| image:: media/image24.gif
-   :width: 5in
-   :height: 3.75in
 .. |image9| image:: media/image28.gif
-   :width: 2.66667in
-   :height: 2in
 .. |image10| image:: media/image29.gif
-   :width: 2.66667in
-   :height: 2in
 .. |image11| image:: media/image32.gif
-   :width: 5in
-   :height: 3.75in
 .. |image12| image:: media/image35.emf
 .. |image13| image:: media/image36.gif
-   :width: 5.09469in
-   :height: 3.82102in
 .. |image14| image:: media/image40.png
-   :width: 2.65069in
-   :height: 1.02361in
+
