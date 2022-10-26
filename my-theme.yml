@@ -1,0 +1,11 @@
+extends: default-with-font-fallbacks
+font:
+  catalog:
+    merge: true 
+    KaiGen Gothic JP:
+      normal: GEM_FONTS_DIR/KaiGenGothicJP-Regular.ttf
+      bold: GEM_FONTS_DIR/KaiGenGothicJP-Bold.ttf
+      italic: GEM_FONTS_DIR/KaiGenGothicJP-Regular-Italic.ttf
+      bold_italic: GEM_FONTS_DIR/KaiGenGothicJP-Bold-Italic.ttf
+base:
+  font_family: KaiGen Gothic JP
