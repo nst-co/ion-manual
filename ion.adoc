@@ -9,6 +9,7 @@ v1.0.0, 2022/10/26:初版
 :toclevels: 5
 :sectnums:
 :lang: ja
+:experimental:
 
 [discrete]
 == 安全にご使用いただくために
@@ -434,21 +435,24 @@ image::ion/image15.png[image]
 
 本章では、ユニットの機能、使用手順を説明します。
 
-image::ion/image15.png[image]
-
 === 画面構成
 
 本ユニットは、下図のような画面にて構成されています。
 
-image::ion/image15.png[image]
+[mermaid]
+....
+graph LR
+  main[<b>計測画面</b><br>電源投入後 及び 計測時] ---|設定<br>ボタン| c{ }
+  c --- conf[<b> 設定画面 </b> <br>品種ごとの設定]
+  c --- trace[<b> トレサビ画面 </b> <br>トレサビの形式とメディア]
+  main ---- t[<b> 登録画面 </b> <br>マスターデータを登録します]
+....
+
 
 ==== メイン（計測）画面
 
 本ユニットのメイン画面です。計測を実行する画面になります。
 
-image::ion/image16.gif[image]
-
-image::ion/image15.png[image]
 
 【ボタン機能】
 
