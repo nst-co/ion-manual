@@ -11,6 +11,13 @@ v1.0.0, 2022/10/26:初版
 :lang: ja
 :experimental:
 :imagesdir: image
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
 [discrete]
 == 安全にご使用いただくために
@@ -443,10 +450,21 @@ image::ion/image15.png[image]
 [mermaid]
 ....
 graph LR
-  main[<b>計測画面</b><br>電源投入後 及び 計測時] ---|設定<br>ボタン| c{ }
+  main[<b>計測画面</b><br>電源投入後 及び 計測時] ---c{{設定ボタン}}
   c --- conf[<b> 設定画面 </b> <br>品種ごとの設定]
   c --- trace[<b> トレサビ画面 </b> <br>トレサビの形式とメディア]
-  main ---- t[<b> 登録画面 </b> <br>マスターデータを登録します]
+  main --- |登録<br>ボタン| t[<b> 登録画面 </b> <br>マスターデータを登録]
+  main --- self{{自己診断ボタン}}
+  main --- |system<br>ボタン| sys[<b> system 画面 </b> <br>システムメニューを表示]
+  sys --- lang{{select language}}
+  sys --- analog[<b> アナログ入力設定画面 </b>]
+  sys --- wave[<b> 波形解析画面 </b>]
+  sys --- fil[<b> フィルタ設計画面 </b>]
+  sys --- io[<b> I/Oステータス画面 </b>]
+  sys --- rtc{{リアルタイムクロック時計合わせ}}
+  sys --- back[<b> バックライト輝度調整画面 </b>]
+  sys --- ip[<b> IPアドレス設定画面 </b>]
+  sys --- firm{{ファームウェア書き換え}}
 ....
 
 
