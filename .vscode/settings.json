@@ -1,0 +1,3 @@
+{
+    "asciidoc.asciidoctorpdf_command": "asciidoctor-pdf --theme my-theme.yml -a scripts=cjk -r asciidoctor-diagram -r ./mylib.rb -a imagesdir=image"
+}

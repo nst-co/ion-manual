@@ -11,8 +11,6 @@ v1.0.0, 2022/10/26:初版
 :lang: ja
 :experimental:
 :imagesdir: image
-:chapter-signifier: ccc
-
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
