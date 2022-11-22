@@ -37,3 +37,17 @@ module AsciidoctorPdfSectionExtensions
 end
 
 Asciidoctor::Section.prepend AsciidoctorPdfSectionExtensions
+
+
+require 'asciidoctor/extensions' unless RUBY_ENGINE == 'opal'
+
+Asciidoctor::Extensions.register do
+  preprocessor do
+    process do |document, reader|
+      # ブロック付きメソッドの戻り値を利用する場合はdo...endでなく{}を使う
+      Asciidoctor::Reader.new reader.readlines.map {|l|
+        l == "[source,mermaid]" ? "[mermaid]" : l
+      }
+    end
+  end
+end
