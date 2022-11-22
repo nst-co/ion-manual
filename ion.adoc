@@ -448,7 +448,7 @@ image::ion/image15.png[image]
 
 本ユニットは、下図のような画面にて構成されています。
 
-[mermaid]
+[source,mermaid]
 ....
 graph LR
   main[<b>計測画面</b><br>電源投入後 及び 計測時] ---c{{設定ボタン}}
