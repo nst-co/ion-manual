@@ -12,6 +12,7 @@ v1.0.0, 2022/10/26:初版
 :experimental:
 :imagesdir: image
 :!section-refsig:
+:xrefstyle: full
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -955,7 +956,7 @@ image::ion/image41.png[image,width=480,height=360]
 
 ＵＳＢメモリで書き換える場合::
 ＵＳＢメモリにDSPというフォルダを作成し、そこに弊社がご提供するDSP.motファイルを格納してＮＴ－１００に挿してください。
-動作保証されているＵＳＢメモリはxref:_機能仕様[xrefstyle=full]を参照してください。
+動作保証されているＵＳＢメモリは<<_機能仕様>>を参照してください。
 
 
 
@@ -963,29 +964,38 @@ image::ion/image41.png[image,width=480,height=360]
 
 本ユニットを使って計測するまでの手順は、下記の通りです。
 
-　　　　マイクや振動センサの入力信号レベルを調整します。
+[source,mermaid]
+....
+graph TD
+    A[入力信号を調整する] --> B[パラメータを設定する]
+    B --> C[マスターデータを作成する]
+    C --> D[計測する]
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　4.1.6アナログ入力設定画面を参照してください。
+    aa --> bb
+    bb --> cc
+    cc --> dd
 
-　　　　計測に関する設定を行います。
+    aa[マイクや振動センサの入力信号レベルを設定します <br> アナログ入力設定画面<sup>*1</sup>を参照してください]
+    bb[計測に関する設定を行います <br> 設定画面<sup>*2</sup>を参照してください]
+    cc[判定基準となるマスターデータ作成します <br> 登録画面<sup>*3</sup>を参照してください]
+    dd[マスターデータと比較して合否判定をおこないます<br> メイン画面<sup>*4</sup>をを参照してください]
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　4.1.3設定画面を参照してください。
+    linkStyle 3 stroke-width:0px
+    linkStyle 4 stroke-width:0px
+    linkStyle 5 stroke-width:0px
 
-判定基準となるマスターデータ作成します。
+    classDef noteclass fill:#fff5ad,stroke:#decc93;
+    class aa,bb,cc,dd noteclass
+....
 
-4.1.2登録画面を参照してください
-
-マスターデータと比較して合否判定をおこないます。
-
-4.1.1メイン（計測）画面をを参照してください。
-
-【メモ】
-
-*５章　保守・定期点検*
-
-　本章では、保守と定期点検の方法について説明します。
+NOTE: *1: <<_アナログ入力設定画面>> +
+      *2: <<_設定画面>> +
+      *3: <<_登録画面>> +
+      *4: <<_メイン計測画面>>
 
 == 保守・定期点検
+
+本章では、保守と定期点検の方法について説明します。
 
 === 保守・定期点検について
 
