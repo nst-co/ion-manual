@@ -9,3 +9,15 @@ font:
       bold_italic: GEM_FONTS_DIR/KaiGenGothicJP-Bold-Italic.ttf
 base:
   font_family: KaiGen Gothic JP
+footer:
+  recto:
+    center:
+      content: '{chapter-title}'
+  verso:
+    center:
+      content: '{chapter-title}'
+heading:
+  h2-border-width: [10, 0]
+  h2-padding: 12
+  h2-margin-bottom: 20
+  h2-text-align: right
