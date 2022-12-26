@@ -9,6 +9,7 @@ font:
       bold_italic: GEM_FONTS_DIR/KaiGenGothicJP-Bold-Italic.ttf
 base:
   font_family: KaiGen Gothic JP
+  border_color: 0000ff
 footer:
   recto:
     center:
@@ -21,3 +22,8 @@ heading:
   h2-padding: 12
   h2-margin-bottom: 20
   h2-text-align: right
+table:
+  border_color: 555555
+sidebar:
+  background_color: CCCCCC
+  border_color: 555555

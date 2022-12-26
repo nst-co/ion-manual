@@ -1,6 +1,6 @@
 = NT-100 異音チェッカー 取扱説明書
 株式会社NST
-v3.0.4.0, 2022/12/22:初版
+v3.0.4.1, 2022/12/26:PDF出力 色など見た目修正
 :doctype: book
 :icons: font
 :table-caption!:
@@ -13,6 +13,7 @@ v3.0.4.0, 2022/12/22:初版
 :imagesdir: image
 :!section-refsig:
 :xrefstyle: full
+:pdf-folio-placement: physical
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -176,6 +177,7 @@ endif::[]
 |===
 |バージョン |日付 |内容
 |{revnumber} |{revdate} |{revremark}
+|3.0.4.0 |2022/12/22 |初版
 |===
 
 toc::[]
